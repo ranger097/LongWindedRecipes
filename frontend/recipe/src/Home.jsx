@@ -1,9 +1,9 @@
-
+import RecipeCard from './Header'
 
 function Home() {
 return (
 <div>
-<h1>Hello World!</h1>
+<Header />
 
 </div>
 

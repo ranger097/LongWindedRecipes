@@ -4,6 +4,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(#ffffcc -20%, white 50%);
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 h1,

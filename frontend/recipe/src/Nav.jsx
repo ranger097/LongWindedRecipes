@@ -6,7 +6,7 @@ return (
   <div className="navDiv">
   <Link to="/">Home</Link>
   <Link to="/profile">Profile</Link>
-  <Link to="/recipe">Recipes</Link>
+  <Link to="/recipes">Recipes</Link>
   </div>
 </nav>
  );
