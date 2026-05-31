@@ -1,6 +1,6 @@
 package com.ranger.recipe;
 
-public class User {
+public class Profile {
 
 public int id;
 public String name;
@@ -11,12 +11,13 @@ public String websiteUrl;
 public String email;
 public String userImage;
 public boolean isOnline;
+public String quote;
 
-public User( int id, 
+public Profile( int id, 
 String name, String bio, 
 String description, String role, 
 String websiteUrl, String email, 
-String userImage, boolean isOnline ) {
+String userImage, boolean isOnline, String quote ) {
 
 this.id = id;
 this.name = name;
@@ -27,6 +28,6 @@ this.websiteUrl = websiteUrl;
 this.email = email;
 this.userImage = userImage;
 this.isOnline = isOnline;
-
+this.quote = quote;
   }
 }

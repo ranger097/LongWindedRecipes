@@ -12,13 +12,13 @@ public class RecipeController {
   @GetMapping("/recipes")
   public List<Recipe> getAllRecipe() {
   Recipe r1 = new Recipe(
-  1,//id;
+  1,//id
   "oatmeal",//title
   "best oatmeal ever",//description
   List.of("oats","sugar free syrup","blueberries"),//ingredients
   "img/oatmeal.jpg",//imageUrl
   1,//servings
-  "Breakfast",//category;
+  "Breakfast",//category
   10,//cookTime
   5,//prepTime
   15,//totalTime

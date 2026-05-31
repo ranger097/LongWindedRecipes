@@ -1,27 +1,32 @@
 import { useEffect, useState } from "react";
 
 function Header() {
-const [users, setUsers] = useState([]);
+const [profile, setProfile] = useState(null);
 
 useEffect(() => {
-fetch("https://localhost:8080/users")
+fetch("http://localhost:8080/profile")
 .then(res => res.json())
-.then(data => setUsers(data))
+.then(data => setProfile(data))
 },[]);
 
+
+if (!profile) {
+return <div>Loading...</div>
+}
+
 return (
-  <div>
-  {users.map((user) =>  ( 
-    <div className="fullHeaderContainer" key={user.id}>
+  <div> 
+    <div className="fullHeaderContainer" key={profile.id}>
     <div className="imageAndName">
-    <img src={user.userImage} alt={user.description}/>
-       <span>{user.message}</span>
-       <span>{user.name}</span>
+    <img src={profile.userImage} 
+     alt={profile.description} 
+     className="profileImage"/>
+       <span>{profile.quote}</span>
+       <span>{profile.name}</span>
     </div>
     <div className="menuIcon">
     </div>
     </div>
-  ))}
 
 </div>
 );
