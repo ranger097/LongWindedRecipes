@@ -1,11 +1,11 @@
 import Header from './Header'
-import Recipes from './Recipes'
+import RecommendedRecipes from './RecommendedRecipes'
 
 function Home() {
 return (
 <div>
 <Header />
-<Recipes />
+<RecommendedRecipes />
 
 </div>
 
