@@ -6,7 +6,7 @@ import Nav from "./Nav";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/LongWindedRecipes">
     <Nav />
     <Routes>
     <Route path="/" element={<Home />} />
